@@ -1,0 +1,17 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBxBnTHLioljBK0g3LBlrWtn2EFsCY9Pz8",
+  authDomain: "lucky-draw-app-53625.firebaseapp.com",
+  projectId: "lucky-draw-app-53625",
+  storageBucket: "lucky-draw-app-53625.firebasestorage.app",
+  messagingSenderId: "102850414969",
+  appId: "1:102850414969:web:02af7869e0714d815687a8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
