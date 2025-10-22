@@ -102,22 +102,15 @@
         } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         // --- Firebase Configuration ---
-        // This config is provided by the Canvas environment.
-        // For local testing, replace this with your own Firebase config object.
-        let firebaseConfig;
-        try {
-            firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-        } catch (e) {
-            console.error("Firebase config is not valid JSON.", e);
-            showMessage("Error: Firebase config is not valid. Please check console.", true);
-            firebaseConfig = {}; // Set empty config to avoid further errors
-        }
-
-        // This app ID is provided by the Canvas environment.
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-lucky-draw';
-        
-        // This token is provided by the Canvas environment.
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        // This is my project's config from the Firebase console
+        const firebaseConfig = {
+            apiKey: "AIzaSyBxBnTHLioljBK0g3LBlrWtn2EFsCY9Pz8",
+            authDomain: "lucky-draw-app-53625.firebaseapp.com",
+            projectId: "lucky-draw-app-53625",
+            storageBucket: "lucky-draw-app-53625.firebasestorage.app",
+            messagingSenderId: "102850414969",
+            appId: "1:102850414969:web:02af7869e0714d815687a8"
+        };
         
         // --- Global Variables ---
         let app, auth, db, userId;
